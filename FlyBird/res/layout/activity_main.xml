@@ -2,50 +2,51 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg_day"
     android:orientation="vertical"
+    android:background="@drawable/bg_day"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.anLA.flybird.MainActivity" >
+    tools:context="com.example.flybird_anla.MainActivity" >
 
     <RelativeLayout
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_weight="1" >
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:orientation="horizontal" >
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" >
 
             <ImageView
+                android:id="@+id/view"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
                 android:src="@drawable/ic_launcher" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Fly Bird"
-                android:textSize="22sp" />
+                android:layout_gravity="center_vertical"
+                android:text="FlyBird"
+                android:textSize="30sp" />
         </LinearLayout>
     </RelativeLayout>
 
     <RelativeLayout
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_weight="1" >
 
         <ImageButton
+            android:id="@+id/play"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:src="@drawable/button_play" 
-            android:id="@+id/play"/>
+            android:src="@drawable/button_play" />
     </RelativeLayout>
 
 </LinearLayout>
